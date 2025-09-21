@@ -1,5 +1,5 @@
 
-package poojava;
+// package poojava;
 
 public class NumerosPrimos {
 
