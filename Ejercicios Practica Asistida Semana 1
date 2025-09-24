@@ -1,0 +1,19 @@
+1. Desarrolle un programa que imprima los 100 primeros números primos. Un número primo es aquel número entero que solo es divisible por sí mismo y por la unidad. El 1 no se considera ni primo ni compuesto.
+
+2. Escriba un programa en Java que permita ingresar dos números enteros y muestre las cuatro operaciones matemáticas básicas entre ambos. Al final mostrar un mensaje con los resultados. Validar que no se pueda realizar una división por cero.
+
+3. Hacer un programa que permita ingresar por teclado una cadena, y que se imprima en pantalla la misma cadena en formato capitalizado. Ejemplo: Si ingresamos "esta es una cadena larga", debemos imprimir "Esta Es Una Cadena Larga".
+
+4. Escriba un programa en Java que permita ingresar una cadena y cuente la cantidad de vocales, por vocal, incluyendo mayusculas, minusculas y acentuadas y muestre un mensaje similar a este: {A=5, E=7, I=8, O=3, U=1}
+
+5. Hacer un programa que permita ingresar por teclado las posibles ocurrencias de un Dado, es decir, los nros. 1, 2, 3, 4, 5 o 6, repetidas veces (como si estuvieramos jugando). Finalizar cuando se ingrese el nro. 0 (cero). Luego se debe imprimir por pantalla la cantidad de veces que se ingresó cada número.
+
+6. Hacer un programa que permita cargar nombre en un array de tamaño 10, y al final imprimir en pantalla los nombre ingresado ordenados alfabéticamente.
+
+7. Crear un programa que muestre la hora:minuto:segundo actual, junto con el Día/Mes/Año correspondiente; y que se actualice cada segundo. El programa se debe cerrar al presionar la tecla escape.
+
+8. Hacer un programa que permita cargar por pantalla los datos de una persona (Nombre, Apellido, Fecha de Nacimiento, Nro. de Documento, Nro. de Teléfono), y al finalizar grabe los datos en un archivo de texto, separando cada campo con tabulador, y cada línea con un retorno de carro. Obs: Para el tratamiento de los datos debe utilizar la clase Persona.
+
+9. Hacer un programa que permita leer el archivo creado en el punto 7, y despliegue pantalla cada registro. Para el tratamiento de los datos debe utilizar la clase Persona.
+
+10. Hacer el mismo programa del punto 8, pero esta vez se debe grabar los datos en una tabla de base de datos. Utilizar cualquiera de las que tenga a disposición.
