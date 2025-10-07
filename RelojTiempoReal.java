@@ -1,20 +1,20 @@
 // package dado; 
 
 // Importaciones necesarias 
-import java.awt.*;
-import java.awt.event.*;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import javax.swing.*;
-
+import java.awt.*;  // Importa todas las  clases  de AWT (Abstarct  Wiindow Toolkit	)
+import java.awt.event.*;  // Importa clases  para manejo  de  eventos 
+import java.text.SimpleDateFormat; // Importa clase para formateo de fechas
+import javax.swing.*; // Importa todas las clases de Swing (GUI	)
+import java.util.Date; // Importa clase para manejar  fechas y horas 
+// Clase publica 
 public class RelojTiempoReal {
 
     // Variables Globales 
-    private JFrame ventana;
-    private JLabel etiquetaHora;
-    private JLabel etiquetaFecha;
-    private Timer temporizador;
-    private boolean ejecutando;
+	// private :  acceso privado  - solo esta clase puede  acceder 
+    private JFrame ventana;   //Ventana  principal 
+    private JLabel etiquetaHora; // Etiqueta para mostar la hora 
+    private JLabel etiquetaFecha; // Etiqueta para mostrar la fecha
+    private boolean ejecutando; // Bandera para controlar  ejecucion 
 
     // Constructor
     public RelojTiempoReal() {
@@ -22,7 +22,6 @@ public class RelojTiempoReal {
         configurarTemporizador();
         configurarCierre();
     }
-
     // Metodo para crear interfaz grafica 
     private void crearInterfaz() {
         // Crear la ventana principal
@@ -39,24 +38,25 @@ public class RelojTiempoReal {
         etiquetaFecha.setForeground(Color.DARK_GRAY);
 
         // Crear panel para organizar componentes 
-        JPanel panel = new JPanel();
-        panel.setLayout(new BorderLayout());
-        panel.add(etiquetaHora, BorderLayout.CENTER);
-        panel.add(etiquetaFecha, BorderLayout.SOUTH);
+        JPanel panel = new JPanel(); // Configurar Diseno del panel 
+        panel.add(etiquetaHora, BorderLayout.CENTER); // Centrar la etiqueta de la hora 
+        panel.add(etiquetaFecha, BorderLayout.SOUTH); // Agregar la eqtiqueta  de la fecha  en la parte inferior 
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
         // Configurar la ventana 
-        ventana.add(panel);
+        ventana.add(panel); // Agregar panel a la ventana 
         ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        ventana.setSize(400, 200);
+        ventana.setSize(400, 200); // Tamano  de la ventana 
         ventana.setLocationRelativeTo(null); // Centrar en pantalla
-        ventana.setResizable(false);
+        ventana.setResizable(false);  // No redimensionable 
     }
 
     // Metodo para configurar el temporizador que actualiza cada segundo
     private void configurarTemporizador() {
         // Crear Temporizador que se ejecuta cada 1000 milisegundos (1 segundo)
+		// new  Timer (1000, ActiionLIstener ) : crear timer que se activa cada segundo 
         temporizador = new Timer(1000, new ActionListener() {
+			// @Override  : anotacion que indica que este metodo sobreescribe un metodo de la superclase o interfaz
             @Override
             public void actionPerformed(ActionEvent e) {
                 actualizarTiempo();
@@ -68,7 +68,7 @@ public class RelojTiempoReal {
 
     // Metodo para actualizar la hora y la fecha 
     private void actualizarTiempo() {
-        // Obtener la fecha y hora actual 
+        // Obtener la fecha y hora actual s
         Date ahora = new Date();
 
         // Formatear la hora : HH (24h), mm (minutos), ss (segundos)
